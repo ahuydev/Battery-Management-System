@@ -1075,8 +1075,8 @@ bcc_status_t BCC_Meas_GetIsenseVoltage(bcc_drv_config_t* const drvConfig,
     bcc_status_t status;
     uint16_t readVal[2];
 
-    BCC_MCU_Assert(drvConfig != NULL);
-    BCC_MCU_Assert(isenseVolt != NULL);
+//    BCC_MCU_Assert(drvConfig != NULL);
+//    BCC_MCU_Assert(isenseVolt != NULL);
 
     if ((cid == BCC_CID_UNASSIG) || (((uint8_t)cid) > drvConfig->devicesCnt))
     {

@@ -124,7 +124,6 @@ void fillNtcTable(const ntc_config_t* const ntcConfig);
  * @return Error code (BCC_STATUS_SUCCESS - no error).
  */
 bcc_status_t doMeasurements(uint8_t cid);
-
-
+bcc_status_t doGetTemp(uint8_t cid);
 
 #endif /* MONITORING_H_ */

@@ -245,6 +245,18 @@ static void printANxTemp(const char *regName, uint16_t regVal)
             (resVal > 0) ? resVal - degC * 10 : degC * 10 - resVal, regVal);
 }
 
+
+static void printANxTempCustom(const char *regName, uint16_t regVal)
+{
+    int16_t resVal;
+    int16_t degC;
+
+    resVal = getNtcCelsius(regVal);
+    degC = resVal / 10;
+
+    printf("%s: %d.%d degC \r\n", regName, degC,
+            (resVal > 0) ? resVal - degC * 10 : degC * 10 - resVal);
+}
 /*FUNCTION**********************************************************************
  *
  * Function Name : printMeasResults
@@ -432,3 +444,24 @@ bcc_status_t doMeasurements(uint8_t cid)
 }
 
 
+/*FUNCTION**********************************************************************
+ *
+ * Function Name : doGetTemp
+ * Description   : This function reads the temperature registers and print them
+ *                 to serial console output.
+ *
+ *END**************************************************************************/
+
+bcc_status_t doGetTemp(uint8_t cid)
+{
+	uint16_t measurements[BCC_MEAS_CNT];
+	bcc_status_t error;
+
+	if ((error = getMeasurements(cid, measurements)) != BCC_STATUS_SUCCESS)
+	{
+	    return error;
+	}
+
+	printANxTempCustom("AN 0", measurements[BCC_MSR_AN0]);
+	printANxTempCustom("AN 1", measurements[BCC_MSR_AN1]);
+}

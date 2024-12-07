@@ -2,6 +2,8 @@
 ../bcc/monitoring.c:201:21:getMeasurements	24	static
 ../bcc/monitoring.c:223:13:printMeas	32	static
 ../bcc/monitoring.c:236:13:printANxTemp	32	static
-../bcc/monitoring.c:255:13:printMeasResults	24	static
-../bcc/monitoring.c:395:6:fillNtcTable	56	static
-../bcc/monitoring.c:419:14:doMeasurements	80	static
+../bcc/monitoring.c:249:13:printANxTempCustom	24	static
+../bcc/monitoring.c:267:13:printMeasResults	24	static
+../bcc/monitoring.c:407:6:fillNtcTable	56	static
+../bcc/monitoring.c:431:14:doMeasurements	80	static
+../bcc/monitoring.c:455:14:doGetTemp	80	static

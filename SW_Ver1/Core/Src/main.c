@@ -128,7 +128,7 @@ static void initDemo(bcc_status_t *bccError);
 static bcc_status_t startApp(void);
 void startDischarge_Charge();
 
-
+bcc_status_t MeasuarenceApp(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -198,15 +198,15 @@ int main(void)
                 printf("An error occurred (0x%04x)\r\n)", bccError);
 
             }
-  //
-  //          bccError = BCC_Sleep(&g_bccData.drvConfig);
-  //          if (bccError != BCC_STATUS_SUCCESS)
-  //          {
-  //              printf("SLEEP (0x%04x)\r\n)", bccError);
-  //
-  //          }else{
-  //        	  printf("SLEEPINGGGGG)");
-  //          }
+
+            bccError = BCC_Sleep(&g_bccData.drvConfig);
+            if (bccError != BCC_STATUS_SUCCESS)
+            {
+                printf("SLEEP (0x%04x)\r\n)", bccError);
+
+            }else{
+          	  printf("SLEEPINGGGGG)");
+            }
 
             printf("-------------- END ----------------\r\n");
         }
@@ -218,9 +218,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	HAL_GPIO_TogglePin(LED_PC13_GPIO_Port, LED_PC13_Pin);
-	HAL_Delay(500);
-
+	  MeasuarenceApp();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -285,7 +283,7 @@ static void MX_SPI1_Init(void)
   hspi1.Init.Direction = SPI_DIRECTION_2LINES;
   hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
-  hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi1.Init.CLKPhase = SPI_PHASE_2EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
   hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
@@ -386,6 +384,97 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+// Measure voltage of stack, cell 1, cell 2, cell 3, isense.
+bcc_status_t MeasuarenceApp(void)
+{
+	uint8_t cid;
+	bcc_status_t error;
+	uint32_t valueVoltage;
+
+
+	error = BCC_Meas_StartAndWait(&g_bccData.drvConfig, BCC_CID_DEV1, BCC_AVG_1);
+	if (error != BCC_STATUS_SUCCESS)
+	{
+		return error;
+	}
+
+	for (cid = BCC_CID_DEV1; cid <= g_bccData.drvConfig.devicesCnt; cid++)
+	{
+		sendNops();
+
+		printf("------------- BEGIN ---------------\r\n");
+		//	doMeasurements(1);
+		error = BCC_Meas_GetStackVoltage(&g_bccData.drvConfig, BCC_CID_DEV1, &valueVoltage);
+		if (error != BCC_STATUS_SUCCESS)
+		{
+			printf("Error (0x%04x)\r\n)", error);
+		}
+		else
+		{
+			printf("Stack: %d mV \r\n",valueVoltage/1000U);
+		}
+
+		sendNops();
+
+		//	 get cell 1 voltage
+		error = BCC_Meas_GetCellVoltage(&g_bccData.drvConfig, BCC_CID_DEV1, 0, &valueVoltage);
+		if (error != BCC_STATUS_SUCCESS)
+		{
+			printf("Error (0x%04x)\r\n)", error);
+		}
+		else
+		{
+			printf("Cell 1: %d mV \r\n",valueVoltage/1000U);
+		}
+
+		sendNops();
+
+		//	  get cell 1 voltage
+		error = BCC_Meas_GetCellVoltage(&g_bccData.drvConfig, BCC_CID_DEV1, 1, &valueVoltage);
+		if (error != BCC_STATUS_SUCCESS)
+		{
+			printf("Error (0x%04x)\r\n)", error);
+		}else
+		{
+			printf("Cell 2: %d mV \r\n",valueVoltage/1000U);
+		}
+
+		sendNops();
+
+		//	  get cell 1 voltage
+		error = BCC_Meas_GetCellVoltage(&g_bccData.drvConfig, BCC_CID_DEV1, 5, &valueVoltage);
+		if (error != BCC_STATUS_SUCCESS)
+		{
+			printf("Error (0x%04x)\r\n)", error);
+		}else{
+			printf("Cell 3: %d mV \r\n",valueVoltage/1000U);
+		}
+
+		sendNops();
+
+		//	  get Isense voltage
+		error = BCC_Meas_GetIsenseVoltage(&g_bccData.drvConfig, BCC_CID_DEV1, &valueVoltage);
+		if (error != BCC_STATUS_SUCCESS)
+		 {
+			printf("Error (0x%04x)\r\n)", error);
+		}else
+		{
+			printf("ISENSE: %d  uV \r\n", valueVoltage);
+			printf("ISENSE: %d  mA \r\n", abs(valueVoltage)/10U);
+		}
+
+		sendNops();
+		//		get temperature value
+		if ((error = doGetTemp(cid)) != BCC_STATUS_SUCCESS)
+		{
+		    return error;
+		}
+
+		printf("-------------- END ----------------\r\n");
+	}
+}
+
 static bcc_status_t initRegisters()
 {
     uint8_t cid, i;
