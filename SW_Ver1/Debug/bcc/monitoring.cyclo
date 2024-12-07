@@ -1,0 +1,8 @@
+../bcc/monitoring.c:144:16:getNtcCelsius	5
+../bcc/monitoring.c:201:21:getMeasurements	2
+../bcc/monitoring.c:223:13:printMeas	1
+../bcc/monitoring.c:236:13:printANxTemp	2
+../bcc/monitoring.c:255:13:printMeasResults	9
+../bcc/monitoring.c:395:6:fillNtcTable	2
+../bcc/monitoring.c:419:14:doMeasurements	2
+../bcc/monitoring.c:436:13:printMeas2	1

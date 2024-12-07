@@ -1,0 +1,3 @@
+../Core/Src/common.c:226:6:sendNops	16	static
+../Core/Src/common.c:251:14:printInitialSettings	56	static
+../Core/Src/common.c:344:14:printFaultRegisters	48	static

@@ -1,0 +1,4 @@
+../bcc_stm32/bcc_peripheries.c:31:14:BCC_MCU_StartTimeout	1
+../bcc_stm32/bcc_peripheries.c:84:6:BCC_MCU_WriteRstPin	1
+../bcc_stm32/bcc_peripheries.c:97:6:BCC_MCU_WriteCsbPin	1
+../bcc_stm32/bcc_peripheries.c:111:14:BCC_MCU_TransferSpi	1

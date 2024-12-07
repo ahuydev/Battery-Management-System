@@ -1,0 +1,9 @@
+../bcc/bcc_communication.c:228:23:BCC_CalcCRC	1
+../bcc/bcc_communication.c:259:21:BCC_CheckCRC	2
+../bcc/bcc_communication.c:279:21:BCC_CheckMsgCntr	3
+../bcc/bcc_communication.c:310:21:BCC_CheckEchoFrame	7
+../bcc/bcc_communication.c:338:13:BCC_PackFrame	1
+../bcc/bcc_communication.c:442:14:BCC_Reg_ReadSpi	23
+../bcc/bcc_communication.c:575:14:BCC_Reg_WriteSpi	11
+../bcc/bcc_communication.c:665:14:BCC_SendNopTpl	4
+../bcc/bcc_communication.c:700:14:BCC_SendNopSpi	11
