@@ -62,8 +62,8 @@ all: main-build
 main-build: BMS_SW_Ver1.elf secondary-outputs
 
 # Tool invocations
-BMS_SW_Ver1.elf BMS_SW_Ver1.map: $(OBJS) $(USER_OBJS) D:\Do\ an\Doan2\Software\SW_Ver1\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "BMS_SW_Ver1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Do an\Doan2\Software\SW_Ver1\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BMS_SW_Ver1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+BMS_SW_Ver1.elf BMS_SW_Ver1.map: $(OBJS) $(USER_OBJS) D:\Nam_4_Ki_1\Project_2\source-code\Software\Battery-Management-System\SW_Ver1\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "BMS_SW_Ver1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Nam_4_Ki_1\Project_2\source-code\Software\Battery-Management-System\SW_Ver1\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BMS_SW_Ver1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

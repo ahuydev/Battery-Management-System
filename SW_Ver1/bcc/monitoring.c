@@ -432,9 +432,3 @@ bcc_status_t doMeasurements(uint8_t cid)
 }
 
 
-
-static void printMeas2(const char *regName, uint16_t rawVal, uint32_t resVal,
-    const char *unit)
-{
-    printf("  | %s\t| %d %s  \t| 0x%04x\t|\r\n", regName, resVal, unit, rawVal);
-}

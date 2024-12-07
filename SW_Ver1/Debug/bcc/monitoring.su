@@ -5,4 +5,3 @@
 ../bcc/monitoring.c:255:13:printMeasResults	24	static
 ../bcc/monitoring.c:395:6:fillNtcTable	56	static
 ../bcc/monitoring.c:419:14:doMeasurements	80	static
-../bcc/monitoring.c:436:13:printMeas2	32	static

@@ -1,10 +1,10 @@
 Core/Src/common.o: ../Core/Src/common.c ../Core/Inc/common.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc_utils.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33771C.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33772C.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33772C.h ../Core/Inc/main.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc_utils.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33771C.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33772C.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33772C.h \
+ ../Core/Inc/main.h ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -29,11 +29,11 @@ Core/Src/common.o: ../Core/Src/common.c ../Core/Inc/common.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 ../Core/Inc/common.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc_utils.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33771C.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33772C.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33772C.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc_utils.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33771C.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33772C.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33772C.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:

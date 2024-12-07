@@ -23,12 +23,13 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc_utils.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33771C.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33772C.h ../Core/Inc/common.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/monitoring.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc.h
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc_utils.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33771C.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33772C.h \
+ ../Core/Inc/common.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/monitoring.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -54,10 +55,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc_utils.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33771C.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33772C.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc_utils.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33771C.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33772C.h:
 ../Core/Inc/common.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/monitoring.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/monitoring.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc.h:

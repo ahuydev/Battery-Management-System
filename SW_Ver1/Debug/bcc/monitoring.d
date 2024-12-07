@@ -1,7 +1,8 @@
 bcc/monitoring.o: ../bcc/monitoring.c ../bcc/bcc.h ../bcc/bcc_utils.h \
  ../bcc/MC33771C.h ../bcc/MC33772C.h ../Core/Inc/common.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc.h ../bcc/monitoring.h \
- ../Core/Inc/main.h ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc.h \
+ ../bcc/monitoring.h ../Core/Inc/main.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -30,7 +31,7 @@ bcc/monitoring.o: ../bcc/monitoring.c ../bcc/bcc.h ../bcc/bcc_utils.h \
 ../bcc/MC33771C.h:
 ../bcc/MC33772C.h:
 ../Core/Inc/common.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc.h:
 ../bcc/monitoring.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:

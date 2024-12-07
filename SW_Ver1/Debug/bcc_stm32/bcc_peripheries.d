@@ -1,11 +1,12 @@
 bcc_stm32/bcc_peripheries.o: ../bcc_stm32/bcc_peripheries.c \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc_communication.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc_utils.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33771C.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33772C.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc_communication.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc_utils.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33771C.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33772C.h \
  ../bcc_stm32/bcc_peripheries.h ../bcc_stm32/bcc_wait.h \
- D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc.h ../Core/Inc/common.h \
+ D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc.h \
+ ../Core/Inc/common.h \
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
  ../Drivers/CMSIS/Include/core_cm3.h \
  ../Drivers/CMSIS/Include/cmsis_version.h \
@@ -31,14 +32,14 @@ bcc_stm32/bcc_peripheries.o: ../bcc_stm32/bcc_peripheries.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc_communication.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc_utils.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33771C.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/MC33772C.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc_communication.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc_utils.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33771C.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/MC33772C.h:
 ../bcc_stm32/bcc_peripheries.h:
 ../bcc_stm32/bcc_wait.h:
-D:/Do\ an/Doan2/Software/SW_Ver1/bcc/bcc.h:
+D:/Nam_4_Ki_1/Project_2/source-code/Software/Battery-Management-System/SW_Ver1/bcc/bcc.h:
 ../Core/Inc/common.h:
 ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h:
 ../Drivers/CMSIS/Include/core_cm3.h:
